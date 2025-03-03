@@ -1,0 +1,46 @@
+*Heading
+ D:\01_PPP_2024\ThermalFemCode\sqaure_4_elem.inp
+*NODE
+1, 0, 0, 0
+2, 1, 0, 0
+3, 1, 1, 0
+4, 0, 1, 0
+5, 0.49999999999869, 0, 0
+6, 1, 0.49999999999869, 0
+7, 0.50000000000206, 1, 0
+8, 0, 0.50000000000206, 0
+9, 0.50000000000038, 0.50000000000038, 0
+******* E L E M E N T S *************
+*ELEMENT, type=T3D2, ELSET=Line1
+5, 1, 5
+6, 5, 2
+*ELEMENT, type=T3D2, ELSET=Line2
+7, 2, 6
+8, 6, 3
+*ELEMENT, type=T3D2, ELSET=Line3
+9, 3, 7
+10, 7, 4
+*ELEMENT, type=T3D2, ELSET=Line4
+11, 4, 8
+12, 8, 1
+*ELEMENT, type=CPS4, ELSET=Surface1
+13, 1, 5, 9, 8
+14, 8, 9, 7, 4
+15, 5, 2, 6, 9
+16, 9, 6, 3, 7
+*ELSET,ELSET=inlet
+11, 12, 
+*ELSET,ELSET=outlet
+7, 8, 
+*ELSET,ELSET=top
+9, 10, 
+*ELSET,ELSET=bottom
+5, 6, 
+*NSET,NSET=inlet
+1, 4, 8, 
+*NSET,NSET=outlet
+2, 3, 6, 
+*NSET,NSET=top
+3, 4, 7, 
+*NSET,NSET=bottom
+1, 2, 5, 
