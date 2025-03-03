@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Enter Fileprefix" 
+read Fileprefix
+echo "Enter Fileext"
+read Fileext
+echo "Enter snapshots number"
+read nsnapshots
+for file in $Fileprefix.$nsnapshots.$Fileext
+do
+	echo $file
+	head -1 $file | sed "s/1/0/3" | sed "s/1/0/2" | sed "s/2/1/g" >> vishal.txt 
+	head -2 $file | tail -1 | sed "s/type//g" | sed "s/mass//g" | sed "s/eam_rho//g" >> vishal.txt 
+	grep "#X" $file | awk '{print $1, $2*0.1, $3*0.1, $4*0.1}' >> vishal.txt 
+	grep "#Y" $file | awk '{print $1, $2*0.1, $3*0.1, $4*0.1}' >> vishal.txt 
+	grep "#Z" $file | awk '{print $1, $2*0.1, $3*0.1, $4*0.1}' >> vishal.txt 
+	head -6 $file | tail -1 >> vishal.txt 
+	head -7 $file | tail -1 >> vishal.txt 
+	head -8 $file | tail -1 >> vishal.txt 
+	awk '{if (NR>8 && NR<1009) print $1,$4*0.1,$5*0.1,$6*0.1,$7,$8,$9,$10*1.6}' $file  >> vishal.txt #task1a	
+done	
