@@ -21,7 +21,7 @@ This project presents a nonlinear finite element implementation for a fully coup
 ```
 ├── mainCouplefem.m          # Main MATLAB script for running simulations
 ├── square100Element.inp     # Example input mesh file
-├── extractDataInpFile.m     # Etract Data from .inp Files
+├── extractDataInpFile.m     # Extract Data from .inp Files
 ├── elementThermalfem.m      # Element-level calculations for Thermal.
 ├── materialThermalfem.m     # Material property definitions for Thermal.
 ├── elementMechfem.m         # Element-level calculations for Mechanical.
@@ -73,19 +73,30 @@ steadyState = 'yes';
 Set `testCase` to 1, 2, or 4 and compare with exact solutions:
 ```matlab
 testCase = 1;
+eigenValueTest = 'no';
+numericalTesting = 'no';
+temperatureDependent = 'no';
+steadyState = 'yes';
 ```
 
 ### 3. Numerical Testing
 Run internal consistency tests:
 ```matlab
 testCase = 1;
+eigenValueTest = 'no';
 numericalTesting = 'yes';
+temperatureDependent = 'no';
+steadyState = 'yes';
 ```
 
 ### 4. Eigenvalue Test
 Verify the stability of the thermal element:
 ```matlab
+testCase = 1;
 eigenValueTest = 'yes';
+numericalTesting = 'no';
+temperatureDependent = 'no';
+steadyState = 'yes';
 ```
 
 ## Results
