@@ -92,7 +92,6 @@ eigenValueTest = 'yes';
 Results are visualized using MATLAB’s contour plots, showing:
 - Displacement magnitude (`u`)
 - Temperature distribution (`T`)
-- Stress fields
 
 ## Future Work
 - Extend the model to thermoelastic-plastic material behavior
