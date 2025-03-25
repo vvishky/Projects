@@ -6,7 +6,7 @@
 
 ### Example
 ```bash
-python MohrCirc.py Gr122 MatPt dat 10
+python MohrCircle.py Gr10 MatPt dat 1
 ```
 This command processes 10 files (e.g., `Gr122_MatPt1.dat` to `Gr122_MatPt10.dat`), generates Mohr's Circle plots for each material point, and creates additional plots for simple and volume-weighted averaged stress tensors.
 
