@@ -19,14 +19,16 @@ This project presents a nonlinear finite element implementation for a fully coup
 
 ## Project Structure
 ```
-├── mainCouplefem.m       # Main MATLAB script for running simulations
-├── elementRoutine.m      # Element-level calculations
-├── materialRoutine.m     # Material property definitions
-├── loadMesh.m            # Mesh loading function
-├── square100Element.inp  # Example input mesh file
-├── square400Element.inp  # Example finer mesh input file
-├── squareCenterHoleFineMesh.inp  # Mesh file for square plate with hole
-├── README.md             # Project documentation
+├── mainCouplefem.m          # Main MATLAB script for running simulations
+├── square100Element.inp     # Example input mesh file
+├── extractDataInpFile.m     # Etract Data from .inp Files
+├── elementThermalfem.m      # Element-level calculations for Thermal.
+├── materialThermalfem.m     # Material property definitions for Thermal.
+├── elementMechfem.m         # Element-level calculations for Mechanical.
+├── materialMechfem.m        # Material property definitions for Mechanical.
+├── elementMechThermfem.m    # Element-level calculations for Mechanical and Thermal.
+├── materialMechfem.m        # Material property definitions for Mechanical.
+├── Report.pdf               # Project documentation
 ```
 
 ## Running the Code
