@@ -96,7 +96,7 @@ Each analysis investigates relationships, fits models, and evaluates their adequ
 - **Visualization**:
   - Plotted data, fitted curve (green), true curve (dashed), confidence bands (red), and prediction intervals (purple).
 - **Findings**: 
-  - The amplitude `a = 3.164` exceeds `Lc = 3`, and confidence bands can be used to assess significance (not explicitly quantified in the document but implied by the methodology).
+  - The amplitude `a = 3.164` exceeds `Lc = 3`, and confidence bands can be used to assess significance.
 
 ## Files
 - **`timber.txt`**: Dataset with 49 wood samples.
@@ -123,9 +123,3 @@ Each analysis investigates relationships, fits models, and evaluates their adequ
   - Lorentz model parameters: `a = 3.164`, `x_0 = 256.0`.
   - Maximum signal strength exceeds `Lc = 3`, with confidence bands supporting the fit.
 
-## Author
-Analysis performed as part of a statistical modeling exercise.
-
----
-
-This updated `README.md` integrates both tasks while maintaining clarity and structure. Let me know if further refinements are needed!
