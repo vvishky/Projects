@@ -113,15 +113,3 @@ Where:
 - Visual inspection of the final `P` matrix and `r` vector for test cases.
 
 ---
-
-## 👨‍💻 Author
-
-**Vishal Soni**  
-Matriculation Number: 66158  
-TU Bergakademie Freiberg
-
----
-
-## 📜 License
-
-This project is provided as coursework and intended for academic use only.
