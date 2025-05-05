@@ -72,7 +72,7 @@ qsub script.pbs
 
 ## 📈 Performance Scaling
 
-### Strong Scaling (Fixed Problem Size)
+### Strong Scaling (Fixed Problem Size(10000×10000))
 
 | Processors | Execution Time (s) |
 |------------|--------------------|
