@@ -1,0 +1,2 @@
+Final Rayleigh Quotient (approx largest eigenvalue): 1.000000
+Total computation time with 60 processors: 0.460119 seconds.

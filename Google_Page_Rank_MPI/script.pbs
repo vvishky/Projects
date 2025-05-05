@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N MPI_hpc
+#PBS -q teachingq
+#PBS -l select=1:ncpus=60:mem=248gb:mpiprocs=60
+#PBS -l walltime=00:05:00
+#PBS -o pbs_out.txt
+#PBS -e pbs_err.txt
+module load openmpi/gcc/11.4.0/5.0.3
+PBS_O_WORKDIR=$HOME/hpc_Project
+cd $PBS_O_WORKDIR
+MATRIX_SIZE=10000
+mpic++ -o hpc_code.out MPI_GooglePageRank.cpp
+mpirun ./hpc_code.out $MATRIX_SIZE
